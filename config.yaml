@@ -1,6 +1,6 @@
 settings:
   title: 'Status Page'
-  url: 'https://status-page.eidam.dev' # used for Slack messages
+  url: 'https://status.digitra.me' # used for Slack messages
   logo: logo-192x192.png # image in ./public/ folder
   daysInHistogram: 90 # number of days you want to display in histogram
   collectResponseTimes: true # collects avg response times from CRON locations
@@ -15,25 +15,104 @@ settings:
   dayInHistogramNotOperational: ' incident(s)' # xx incident(s) recorded
 
 monitors:
-  - id: workers-cloudflare-com # unique identifier
-    name: workers.cloudflare.com
-    description: 'You write code. They handle the rest.' # default=empty
-    url: 'https://workers.cloudflare.com/' # URL to fetch
+  - id: ladredipiante-com # unique identifier
+    name: ladredipiante.com
+    description: '' # default=empty
+    url: 'https://www.ladredipiante.com/' # URL to fetch
     method: GET # default=GET
     expectStatus: 200 # operational status, default=200
-    followRedirect: false # should fetch follow redirects, default=false
+    followRedirect: true # should fetch follow redirects, default=false
     linkable: false # allows the title to be a link, default=true
 
-  - id: www-cloudflare-com
-    name: www.cloudflare.com
-    description: 'Built for anything connected to the Internet.'
-    url: 'https://www.cloudflare.com'
+  - id: arthotel-it
+    name: www.arthotel.it
+    description: ''
+    url: 'https://www.arthotel.it'
     method: GET
     expectStatus: 200
     linkable: true # allows the title to be a link, default=true
 
-  - id: blog-cloudflare-com
-    name: The Cloudflare Blog
-    url: 'https://blog.cloudflare.com/'
+  - id: arthotel-milano
+    name: www.arthotel-milano.it
+    url: 'https://www.arthotel-milano.it'
     method: GET
     expectStatus: 200
+
+  - id: arthotel-museo
+    name: www.arthotel-museo.it
+    url: 'https://www.arthotel-museo.it/' # URL to fetch
+    method: GET # default=GET
+    expectStatus: 200 # operational status, default=200
+    followRedirect: true
+
+  - id: legaragebistrot.it
+    name: legaragebistrot.it
+    description: ''
+    url: 'https://legaragebistrot.it/'
+    method: GET
+    expectStatus: 200
+    linkable: true # allows the title to be a link, default=true
+
+  - id: jode.it
+    name: jode.it
+    url: 'https://jode.it'
+    method: GET
+    expectStatus: 200
+    
+  - id: jumboffice.it
+    name: jumboffice.it
+    url: 'https://www.jumboffice.it/' # URL to fetch
+    method: GET # default=GET
+    expectStatus: 200 # operational status, default=200
+
+  - id: lucchesi1897.it
+    name: lucchesi1897.it
+    description: ''
+    url: 'https://lucchesi1897.it/en/'
+    method: GET
+    expectStatus: 200
+    linkable: true # allows the title to be a link, default=true
+
+  - id: pecchioliresearch.com
+    name: pecchioliresearch.com
+    url: 'https://pecchioliresearch.com/'
+    method: GET
+    expectStatus: 200
+
+  - id: sigmal2.it
+    name: sigmal2.it
+    url: 'https://www.sigmal2.it/'
+    method: GET # default=GET
+    expectStatus: 200 # operational status, default=200
+
+  - id: artegenerali-italy.speakart.io
+    name: artegenerali-italy.speakart.io
+    url: 'https://artegenerali-italy.speakart.io'
+    method: GET
+    expectStatus: 200
+  - id: artegenerali-france.speakart.io
+    name: artegenerali-france.speakart.io
+    url: 'https://artegenerali-france.speakart.io'
+    method: GET
+    expectStatus: 200
+  - id: artegenerali-germany.speakart.io
+    name: artegenerali-germany.speakart.io
+    url: 'https://artegenerali-germany.speakart.io'
+    method: GET
+    expectStatus: 200
+  - id: archivioemilioisgro.speakart.io
+    name: archivioemilioisgro.speakart.io
+    url: 'https://archivioemilioisgro.speakart.io'
+    method: GET
+    expectStatus: 200
+  - id: renatopengo.speakart.io
+    name: renatopengo.speakart.io
+    url: 'https://renatopengo.speakart.io'
+    method: GET
+    expectStatus: 200
+  - id: ancavlad.speakart.io
+    name: ancavlad.speakart.io
+    url: 'https://ancavlad.speakart.io'
+    method: GET
+    expectStatus: 200
+  
