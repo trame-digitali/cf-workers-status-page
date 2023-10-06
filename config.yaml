@@ -84,7 +84,50 @@ monitors:
     url: 'https://www.sigmal2.it/'
     method: GET # default=GET
     expectStatus: 200 # operational status, default=200
+    
+  - id: giovannidonzelli.it
+    name: giovannidonzelli.it
+    url: 'https://www.giovannidonzelli.it/'
+    method: GET # default=GET
+    expectStatus: 200 # operational status, default=200
 
+  - id: nigrocostruzioni.it
+    name: nigrocostruzioni.it
+    url: 'https://www.nigrocostruzioni.it/'
+    method: GET # default=GET
+    expectStatus: 200 # operational status, default=200
+  
+  - id: discoverfordtrucks.it
+    name: discoverfordtrucks.it
+    url: https://discoverfordtrucks.it/
+    method: GET
+    expectStatus: 200
+
+  - id: manifatturabig.it
+    name: manifatturabig.it
+    url: https://manifatturabig.it/
+    method: GET
+    expectStatus: 200
+
+  - id: bisentino.it
+    name: bisentino.it
+    url: https://bisentino.it/
+    method: GET
+    expectStatus: 200
+
+  - id: sparkandwater.com
+    name: sparkandwater.com
+    url: https://sparkandwater.com/
+    method: GET
+    expectStatus: 200
+
+  - id: tutelarti.it
+    name: tutelarti.it
+    url: https://tutelarti.it/
+    method: GET
+    expectStatus: 200
+
+    ## SPEAKART 
   - id: artegenerali-italy.speakart.io
     name: artegenerali-italy.speakart.io
     url: 'https://artegenerali-italy.speakart.io'
