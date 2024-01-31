@@ -158,4 +158,24 @@ monitors:
     url: 'https://ancavlad.speakart.io'
     method: GET
     expectStatus: 200
+  - id: jode.it
+    name: jode.it
+    url: 'https://jode.it'
+    method: GET
+    expectStatus: 200
+  - id: api.jode.it
+    name: api.jode.it
+    url: 'https://api.jode.it'
+    method: GET
+    expectStatus: 200
+  - id: jumboffice.it
+    name: jumboffice.it
+    url: 'https://jumboffice.it'
+    method: GET
+    expectStatus: 200
+  - id: api.jumboffice.it
+    name: api.jumboffice.it
+    url: 'https://api.jumboffice.it'
+    method: GET
+    expectStatus: 200
   
